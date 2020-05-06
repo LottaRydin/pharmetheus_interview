@@ -24,6 +24,9 @@ test_that('greatestValueOf returns the greatest value of a numeric vector',{
   #type of data that Demo wrote the function for
   expect_equal(object=greatestValueOf(numericValueVector=c(7,2,33,12)),
                expected=33)
+
+expect_equal(object=greatestValueOf(numericValueVector=c(1)),
+               expected=1)
   
   #Think about what tests would at the same time
   #reveal limitations with the function above and indicate when the limitations have been removed, 
